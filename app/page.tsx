@@ -116,6 +116,8 @@ export default function Home() {
       {/* Sidebar */}
       {sidebarOpen && (
         <Sidebar
+          isOpen={sidebarOpen}
+          onToggle={handleToggleSidebar}
           history={history}
           onSelectItem={handleSelectHistoryItem}
           onDeleteItem={handleDeleteHistoryItem}
